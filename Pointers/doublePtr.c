@@ -10,6 +10,9 @@ int main()
     int **pp = NULL;
     pp = &p;
 
-    printf("&pp = %p\npp = %p  &p = %p\n*pp = %p  &a = %p\n**pp = %p  a = %p\n",&pp,pp,&p,*pp,&a,**pp,a);
+    printf( "&pp     = %p               \n"
+            "pp      = %p  &p    = %p   \n"
+            "*pp     = %p  &a    = %p   \n"
+            "**pp    = %p  a     = %p   \n",&pp,pp,&p,*pp,&a,**pp,a);
 
 }
