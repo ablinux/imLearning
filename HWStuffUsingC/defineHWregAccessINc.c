@@ -18,13 +18,14 @@ typedef union
     uint32_t whole;
 }RegA;
 
+RegA *CAN = (RegA *)CAN_REG_BASE;
+
 int main()
 {
-    RegA data;
-    data.b.A = 0xAAAA;
-    data.b.B = 0xBBBB;
-    printf("%d\n",sizeof(RegA));
+    CAN->b.A = 0xAAAA;
+    CAN->b.B = 0xBBBB;
+    printf("%d\n",sizeof(CAN));
 
-    printf("%x\n%x\n%x\n",data.b.A,data.b.B,data.whole);
-    printf("Base Register: 0x%x\n",CAN_REG_BASE);
+    printf("data.b.A = %x\ndata.b.B = %x\ndata.whole = %x\n",CAN->b.A,CAN->b.B,CAN->whole);
+    printf("Base Register: 0x%x\n",*CAN_REG_BASE);
 }

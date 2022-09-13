@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/srv/dev-disk-by-uuid-66805F7E805F53A1/CProgrammingQuestions/InterviewQuestion/trees",
+            "binaryPath": "/srv/dev-disk-by-uuid-66805F7E805F53A1/CProgrammingQuestions/InterviewQuestion/trees/a.out",
+            "binaryArgs": []
+        }
+    ]
+}

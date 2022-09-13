@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "stackll.h": "c",
+        "stdint.h": "c"
+    }
+}
